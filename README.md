@@ -1,10 +1,8 @@
 # Arcade Game 蹦蹦遊戲廳 👾
 
-動態畫面
-![](./assets/screenrecord.gif)
-
 靜態畫面
 ![](./assets/screenshot.png)
+![](./assets/screenshot_2.png)
 
 ## 📌 專案目的
 
