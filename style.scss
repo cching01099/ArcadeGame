@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  background-color: rgb(168, 175, 220);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+header {
+  div.header-container {
+    max-width: 800px;
+    height: 250px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 2rem 0 0 0;
+    box-shadow: 4px 4px;
+    margin: 2.5rem auto;
+    position: relative;
+
+    h1.title {
+      height: 40%;
+      border-bottom: 3px solid black;
+      font-weight: 700;
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    div.info {
+      height: 60%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      p.description {
+        padding: 2rem;
+        text-align: left;
+        font-size: 1.1rem;
+
+        line-height: 1.5rem;
+        border-right: 3px solid black;
+        background-color: rgb(230, 189, 183);
+      }
+      a.link {
+        padding: 1rem;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: black;
+        background-color: rgb(248, 183, 85);
+      }
+    }
+  }
+}
+main {
+  div.main-container {
+    div.games {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      div.game {
+        width: 25rem;
+        margin: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        div.title {
+          width: 70%;
+          padding: 0.3rem 0.4rem;
+          border: 2.5px solid black;
+          border-radius: 0 2rem 0 0;
+          background-color: antiquewhite;
+          font-weight: 600;
+          font-size: 1.5rem;
+        }
+        img {
+          width: 25rem;
+          height: 25rem;
+          object-fit: cover;
+          object-position: center;
+          border: 2.5px solid black;
+          border-radius: 0 1rem 0 0;
+        }
+        div.links {
+          width: 25rem;
+          height: 3rem;
+          border: 2.5px solid black;
+          background-color: antiquewhite;
+          display: flex;
+          align-items: center;
+          text-align: center;
+
+          a.link {
+            margin: 1rem 3.5rem;
+            font-size: 1.2rem;
+            color: black;
+            &:hover {
+              text-decoration: underline;
+              text-decoration-color: purple;
+              text-underline-offset: 3px;
+              text-decoration-thickness: 2px;
+            }
+            i {
+              margin: 0.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  div.footer-container {
+    div.more-info {
+      max-width: 900px;
+      height: 100px;
+      background-color: antiquewhite;
+      display: flex;
+      margin: 5rem auto;
+      border: 2px solid black;
+      box-shadow: 4px 4px;
+
+      span.info-link {
+        width: 40%;
+        border-right: 2px solid black;
+        background-color: rgb(248, 183, 85);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+      }
+      a.info-link {
+        width: 20%;
+        border-right: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 1.2rem;
+        &:hover {
+          background-color: rgb(232, 198, 193);
+        }
+        i {
+          margin: 0.3rem;
+          pointer-events: none;
+        }
+      }
+    }
+    div.marquee {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      border: 2px solid black;
+      background-color: rgb(150, 84, 213);
+      div {
+        color: white;
+        font-size: 3rem;
+        padding-left: 100%;
+        line-height: 4rem;
+        display: inline-block;
+        animation: animateToLeft 10s linear infinite;
+      }
+    }
+  }
+}
+
+@keyframes animateToLeft {
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
